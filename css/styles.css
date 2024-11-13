@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+
+.page-title {
+    background-color: #2d3945;
+    font-size: 1.2em;
+    color: white;
+    padding:10px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.9em;
+}
+
+.header-text, .newsletter-text, .newsletter-format {
+    color: #797979;
+    font-size: 1.5em;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.signup-section{
+margin-left: 8px;
+margin-right: 8px;
+border-bottom: solid 5px black;
+}
+
+.contact-section {
+    border-top: solid 2px black;
+    margin-top: 5px;
+    padding-top: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+  
+}
+
+form {
+display: flex;
+flex-direction: column;
+}
+
+fieldset {
+    border: 0;
+}
+
+
+
+legend {
+    font-size: 1.9em;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+hr {
+    color: black;
+    height: 3px;
+    background-color: black;
+    border-color: black;
+    margin-top: 20px;
+    
+}
+
+label {
+    color: #797979 ;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bottom-labels {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+label.bottom-labels {
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    height: 50px;
+    background-color: #eff0f1;
+    border: 0px;
+    padding-left: 15px;
+}
+
+input:focus{
+    border: 1px;
+    outline-color: blue;
+}
+
+input::placeholder{
+    text-align: right;
+    font-style: italic;
+    color: #acacac ;
+    padding-right: 20px;
+    font-size: 1.2em;
+}
+
+select {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+textarea {
+    height: 200px;
+    background-color: #eff0f1;
+    border: 0px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+textarea:focus {
+    outline-color: blue;
+}
+
+
+input#html_news, input#css_news, input#javascript_news, input#html, input#plain_text {
+    height: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    
+    margin-bottom: 20px;
+}
+
+p.newsletter-text, p.newsletter-format {
+    padding-left: 0px;
+}
+
+input#plain_text, label#plain-text-label{
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+
+#html_news{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#state {
+    height: 50px;
+    background-color: #eff0f1;
+    border: 0px;
+    width: 100%;
+}
+
+#zip {
+    width: 50%;
+   
+}
+
+input, label {
+    margin-bottom: 10px;
+}
+
+.contact-info label {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact-info input {
+    width: 100%;
+}
+
+.line-break {
+    height: 2px;
+    width: 100%;
+}
+
+button {
+    background-color: #4ebbb5;
+    color: white;
+    border: 0;
+    height: 75px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 2em;
+}
+
+footer p {
+    text-align: center;
+    color:#797979;
+    font-size: 1.4em;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+/* Styles for Tablet & Desktop View */
+@media (min-width: 768px) {
+ 
+    .signup-section, .contact-section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .signup-section {
+        padding-top: 50px;
+    }
+
+    h2 {
+        font-size: 2.3em;
+        margin-bottom: 10px;
+    }
+
+    .header-text {
+        padding-top: 0px;
+        margin-top: 0px;
+        padding-bottom: 50px;
+    }
+
+    .contact-section {
+        margin-top: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    legend {
+        padding-top:30px;
+        padding-bottom: 30px;}
+
+    #zip {
+        width: 25%;
+    }
+    
+    hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label, .contact-info label {
+    flex-basis: calc(30% - 10px);
+}
+
+input, select {
+    flex-basis: 70%;
+}
+
+.newsletter-text, .newsletter-format {
+    width: 100%;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    flex-basis: 10%;
+}
+
+.bottom-labels {
+    flex-basis:80%;
+}
+
+label.topics-text {
+   flex-basis: 100%;
+}
+
+#zip {
+    flex-basis: 25%;
+}
+
+input#plain_text, label#plain-text-label{
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+
+    <header>
+        <section class="page-title">
+            <h1>THE CODE REVIEW</h1>
+        </section>
+
+        <section class="signup-section">
+            <h2>Signup for our Newsletter</h2>
+            <p class="header-text">Get the latest news on how your code is doing in your inbox</p>
+        </section>
+    </header>
+
+
+    
+    <section class="contact-section">
+        <form action="index.html" method="post">
+            <fieldset class="contact-info">
+                <legend>Contact Information</legend>
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="full_name" placeholder="Required"><br>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email_address" placeholder="Required"><br>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone_number"><br>
+
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="street_address"><br>
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city_address"><br>
+
+                <label for="state">State</label>
+                <select id="state" name="state_address">
+                    <option value="" hidden>Choose State</option>
+                    <option value="alabama">Alabama</option>
+                    <option value="alaska">Alaska</option>
+                    <option value="arkansas">Arkansas</option>
+                </select><br>
+                
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="zip_address"><br>
+
+
+
+            </fieldset>
+
+            <hr class="line-break">
+
+            <fieldset>
+                <legend>Newsletter</legend>
+                <p class="newsletter-text">Select the newsletters you would like to recieve</p>
+
+              
+                    <input type="checkbox" name="html_news" id="html_news" value="html_news">
+                    <label for="html_news"class="bottom-labels">HTML News</label><br>
+
+                    <input type="checkbox" name="css_news" id="css_news" value="css_news">
+                    <label for="css_news"class="bottom-labels">CSS News</label><br>
+
+                    <input type="checkbox" name="javascript_news" id="javascript_news" value="javascript_news">
+                    <label for="javascript_news"class="bottom-labels">JavaScript News</label><br>
+            
+
+                <p class="newsletter-format">Newsletter Format</p>
+                
+                    <input type="radio" id="html" name="radio" value="html">
+                    <label for="html" class="bottom-labels">HTML</label><br>
+
+                    <input type="radio" id="plain_text" name="radio" value="plain_text">
+                    <label for="plain_text" class="bottom-labels" id="plain-text-label">Plain Text</label><br>
+
+                
+
+                <label for="topics" class="topics-text">Other topics you'd like to hear about</label><br>
+                <textarea id="topics" name="topics" value="topics"></textarea><br>
+
+                <button type="submit">Sign Up</button>
+
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright Oksana Zimina</p>
+
+    </footer>
+
+
+    
+</body>
+</html>
